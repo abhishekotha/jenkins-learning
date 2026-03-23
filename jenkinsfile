@@ -3,7 +3,10 @@ pipeline{
     stages{
         stage("initial"){
             steps{
-                echo "hello world"
+                sh '''
+                node --version
+                docker --version
+                '''
             }
         }
     }
