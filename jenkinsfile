@@ -4,7 +4,6 @@ pipeline{
         stage("initial"){
             steps{
                 sh '''
-                node --version
                 docker --version
                 '''
             }
